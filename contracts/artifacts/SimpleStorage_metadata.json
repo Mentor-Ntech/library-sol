@@ -151,11 +151,11 @@
 	},
 	"sources": {
 		"contracts/StorageFactory.sol": {
-			"keccak256": "0x2c15e63f45f1d2ca47dd86b164637542c4b696a63d2830f3f421c54e88f2deae",
+			"keccak256": "0x8006b27c96b09bf7e52ec328218c4b3394f88df11e1a3d6c34650f981691909d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4409c39341db80d8a7d9bd8020b2dbcefcf46fcd4230ddb48fd9235dc8ce1eac",
-				"dweb:/ipfs/QmRbAwdjXshJeYr2HiBfuxqaMW6q8fZ9HviS4DbvuC1ss2"
+				"bzz-raw://e79a6738152080d9acf2593d030a46170e49e628fd95b9e610169f482fc0f236",
+				"dweb:/ipfs/QmUsydSfW9989GzXcKbpZy8ryGpmWHpVPaWoqFRauJBghH"
 			]
 		}
 	},

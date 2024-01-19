@@ -55,4 +55,7 @@ contract StorageFactory {
 
         simpleStorage = new SimpleStorage();
     }
+
+    
+
 }
