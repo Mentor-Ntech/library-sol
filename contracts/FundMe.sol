@@ -33,5 +33,21 @@ contract FundMe {
             address funder = funders[funderIndex];
             addressToAmountFunded[funder] = 0;
         }
+        //reset the array
+        funders = new address[](2);
+
+        //actually withdraw the funds
+        //transfer
+
+        payable (msg.sender).transfer(address(this).balance);
+        //send
+
+        payable (msg.sender)
+        //call
+
+        //msg.sender = address
+        //payable(msg.sender) = payable address
+
+        
      }
 }

@@ -16,8 +16,8 @@ contract StorageFactory {
     function stfStore(uint256 _simpleStorageIndex, uint _simpleStorageNumber) public {
         //Address
         //ABI -Application Binary In
-        SimpleStorage simpleStorage = simpleStorageArray[_simpleStorageIndex];
-         simpleStorage.store(_simpleStorageNumber);
+        simpleStorageArray[_simpleStorageIndex].store(_simpleStorageNumber);
+        
     }
      
      function sfGet(uint256 _simpleStorageIndex) public view returns(uint256) {
