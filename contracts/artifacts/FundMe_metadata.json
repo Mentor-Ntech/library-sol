@@ -1,22 +1,14 @@
 {
 	"compiler": {
-		"version": "0.8.23+commit.f704f362"
+		"version": "0.8.22+commit.4fc1097e"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": false,
-						"internalType": "string",
-						"name": "message",
-						"type": "string"
-					}
-				],
-				"name": "ErrorOccurred",
-				"type": "event"
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
 			},
 			{
 				"inputs": [
@@ -53,6 +45,19 @@
 					}
 				],
 				"name": "funders",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "i_owner",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -120,11 +125,11 @@
 			]
 		},
 		"contracts/FundMe.sol": {
-			"keccak256": "0x8d8c8d4fc7903ff9f4928fc9d0d86e3c821c793f51a1b25b551a48a487c7f172",
+			"keccak256": "0xdfef463392c79319061dbca99262d2d82c747c977171f0c61a4e71583012defa",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4f8b68c1958d91a39ce38532a550ce0d3193ed15a13a21bfd5eb648316bea74c",
-				"dweb:/ipfs/QmR6hhTjG33g41p5aRnJzun5tt3z9RUrbazGBrkrVrRnka"
+				"bzz-raw://52c4a022a6233ec9f9336a0d7685dab98ca4a00379781415c7632d87379bdc5d",
+				"dweb:/ipfs/QmQrb3yEHsL8NoBBADntQGeXwXZwCAAzcXZVDjm3k2p5ap"
 			]
 		},
 		"contracts/PriceConverter.sol": {
