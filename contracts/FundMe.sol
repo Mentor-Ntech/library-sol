@@ -10,21 +10,24 @@ import "./PriceConverter.sol";
 contract FundMe {
 
     using  PriceConverter for uint256;
-    uint256 public minimumUsd = 50 * 1e18;
+    uint256 public constant MINIMUM_USD = 50 * 1e18;
     
     address[] public funders;
     mapping(address => uint256) public addressToAmountFunded;
     // event ErrorOccurred(string message);
 
-    address public  owner;
+    address public immutable  i_owner;
+
     constructor() {
-        owner = msg.sender;
+        i_owner = msg.sender;
     }
 
-    function fund() public payable {
+    //Limit tinkering / triaging to 20 minutes.
+
+    function  fund() public payable {
         // Want to be able to set a minimum amount
         // 1. How do we send ETH to this contract
-        require (msg.value.getConversionRate() >= minimumUsd, "Didn't send enough");
+        require (msg.value.getConversionRate() >= MINIMUM_USD, "Didn't send enough");
             funders.push(msg.sender);
             addressToAmountFunded[msg.sender] = msg.value;    
     }
@@ -52,7 +55,7 @@ contract FundMe {
     }
 
     modifier  onlyOwner{
-        require(msg.sender == owner, "Sender is not owner!");
+        require(msg.sender == i_owner, "Sender is not owner!");
         _;
     }
 }
